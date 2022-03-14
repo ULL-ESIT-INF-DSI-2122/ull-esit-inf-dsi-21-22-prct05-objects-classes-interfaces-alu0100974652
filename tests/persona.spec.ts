@@ -23,4 +23,9 @@ describe('Pruebas para la clase persona', () => {
     it("Test para el getter del Genero", () => {
         expect(generoPersona).to.be.equal('Masculino');
     });
+
+    const nuevoNombre = persona.setNombre('Steve');
+    it("Test para set Nombre", () => {
+        expect(persona.getNombre()).to.be.equal('Steve');
+    });
 });
