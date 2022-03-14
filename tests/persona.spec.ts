@@ -18,4 +18,9 @@ describe('Pruebas para la clase persona', () => {
     it("Test para el getter del FechaNacimiento", () => {
         expect(fechaPersona).to.be.equal('12-12-1980');
     });
+
+    const generoPersona = persona.getGenero();
+    it("Test para el getter del Genero", () => {
+        expect(generoPersona).to.be.equal('Masculino');
+    });
 });
