@@ -13,4 +13,9 @@ describe('Pruebas para la clase persona', () => {
     it("Test para el getter del Apellidos", () => {
         expect(apellidosPersona).to.be.equal('Papa Pipi');
     });
+
+    const fechaPersona = persona.getFechaNacimiento();
+    it("Test para el getter del Apellidos", () => {
+        expect(fechaPersona).to.be.equal('12-12-1980');
+    });
 });

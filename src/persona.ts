@@ -34,17 +34,4 @@ export class Persona
     {
         return this.apellidos;
     }
-
-    public getFechaNacimiento ()
-    {
-        return this.fechaNacimiento;
-    }
-
-    public getGenero ()
-    {
-        return this.genero;
-    }
-
-
-
 }
