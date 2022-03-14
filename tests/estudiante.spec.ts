@@ -13,4 +13,9 @@ describe('Pruebas para la clase estudiante', () => {
         expect(estudiante.getCorreo()).to.be.equal('aluxxxxxx@ull.edu.es');
     });
 
+    estudiante.setCorreo('estudiante@ull.es');
+    it("Test para el setter del Correo Institucional", () => {
+        expect(estudiante.getCorreo()).to.be.equal('estudiante@ull.es');
+    });
+
 });
