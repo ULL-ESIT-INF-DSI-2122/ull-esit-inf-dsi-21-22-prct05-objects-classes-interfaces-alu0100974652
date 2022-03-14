@@ -28,4 +28,19 @@ describe('Pruebas para la clase persona', () => {
     it("Test para set Nombre", () => {
         expect(persona.getNombre()).to.be.equal('Steve');
     });
+
+    const nuevoApellidos = persona.setApellidos('Randor Raider');
+    it("Test para set Apellidos", () => {
+        expect(persona.getApellidos()).to.be.equal('Randor Raider');
+    });
+
+    const nuevaFecha = persona.setFecha('08-05-2002');
+    it("Test para set Fecha", () => {
+        expect(persona.getFechaNacimiento()).to.be.equal('08-05-2002');
+    });
+
+    const nuevoGenero = persona.setGenero('Femenino');
+    it("Test para set Genero", () => {
+        expect(persona.getGenero()).to.be.equal('Femenino');
+    });
 });

@@ -45,6 +45,24 @@ export class Persona
         return this.genero;
     }
 
+    public setNombre(nombreNuevo: string)
+    {
+        this.nombre = nombreNuevo;
+    }
 
+    public setApellidos(apellidosNuevo: string)
+    {
+        this.apellidos = apellidosNuevo;
+    }
+
+    public setFecha(fechaNueva: string)
+    {
+        this.fechaNacimiento = fechaNueva;
+    }
+
+    public setGenero(generoNuevo: string)
+    {
+        this.genero = generoNuevo;
+    }
 
 }
