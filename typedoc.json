@@ -1,0 +1,6 @@
+{
+    "entryPoints": [
+      "./src/persona.ts"
+    ],
+    "out": "./docs"
+}
