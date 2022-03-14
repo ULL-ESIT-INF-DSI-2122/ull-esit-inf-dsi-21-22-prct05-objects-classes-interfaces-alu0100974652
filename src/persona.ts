@@ -40,4 +40,11 @@ export class Persona
         return this.fechaNacimiento;
     }
 
+    public getGenero ()
+    {
+        return this.genero;
+    }
+
+
+
 }
