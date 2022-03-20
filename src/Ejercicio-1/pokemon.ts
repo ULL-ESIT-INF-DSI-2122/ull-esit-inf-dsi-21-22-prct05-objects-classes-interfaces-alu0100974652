@@ -16,4 +16,13 @@ export class Pokemon
     private altura: number;
     private tipo: string;
     private estadisticasBasicas = Array(4);
+
+    constructor(nombre :string, peso :number, altura: number, tipo: string, estadisticasBasicas: number[]) 
+    {
+        this.nombre = nombre;
+        this.peso = peso;
+        this.altura = altura;
+        this.tipo = tipo;
+        this.estadisticasBasicas = estadisticasBasicas;
+    }
 }
