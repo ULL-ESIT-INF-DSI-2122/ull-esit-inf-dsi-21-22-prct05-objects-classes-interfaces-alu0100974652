@@ -6,7 +6,7 @@
  * @param altura atributo altura del pokemon
  * @param tipo atributo tipo del pokemon
  * @param estadisticasBasicas atributo de estadísticas básicas en array (ataque, defensa, velocidad y vida)
- * 
+ * @method getNombre metodo que devuelve el nombre del pokemon
  */
 
 export class Pokemon
@@ -24,5 +24,50 @@ export class Pokemon
         this.altura = altura;
         this.tipo = tipo;
         this.estadisticasBasicas = estadisticasBasicas;
+    }
+
+    public getNombre()
+    {
+        return this.nombre;
+    }
+
+    public getPeso()
+    {
+        return this.peso;
+    }
+
+    public getAltura()
+    {
+        return this.altura;
+    }
+
+    public getTipo()
+    {
+        return this.tipo;
+    }
+
+    public getAtaque()
+    {
+        return this.estadisticasBasicas[0];
+    }
+
+    public getDefensa()
+    {
+        return this.estadisticasBasicas[1];
+    }
+
+    public getVelocidad()
+    {
+        return this.estadisticasBasicas[2];
+    }
+
+    public getVida()
+    {
+        return this.estadisticasBasicas[3];
+    }
+
+    public setVida(vida: number)
+    {
+        this.estadisticasBasicas[3] = vida;
     }
 }
