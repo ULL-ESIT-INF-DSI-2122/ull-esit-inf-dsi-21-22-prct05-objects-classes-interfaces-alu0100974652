@@ -1,11 +1,3 @@
-/**
- * Clase Combat
- * @class Combat representa el combate entre dos Pokemons
- * @param pokemon1 representa un pokemon 
- * @param pokemon2 representa un pokemon
- * @method calculoDanios calcula los daños de los pokemons (funcion de la práctica 3 ejercicio 8)
- */
-
 import { Pokemon } from "./pokemon";
 
 export class Combat
@@ -13,12 +5,25 @@ export class Combat
     private pokemon1: Pokemon;
     private pokemon2: Pokemon;
 
+    /**
+     * Constructor de la clase Combat
+     * @param pokemon1 representa un pokemon 
+     * @param pokemon2 representa un pokemon 
+     */
     constructor(pokemon1: Pokemon, pokemon2: Pokemon) 
     {
         this.pokemon1 = pokemon1;
         this.pokemon2 = pokemon2;
     };
 
+    /**
+     * Calcula el daño realizado entre dos pokemons
+     * @param tipoPokemonA selecciona el tipo del pokemon
+     * @param tipoPokemonB selecciona el tipo del pokemon
+     * @param capacidadAtaqueA selecciona daño de ataque del pokemon
+     * @param capacidadAtaqueB selecciona daño de ataque del pokemon
+     * @returns devuelve el calculo realizado
+     */
     calculoDanios(tipoPokemonA: string, tipoPokemonB: string, capacidadAtaqueA: number, capacidadAtaqueB: number)
     {
         let danio = 0;
@@ -78,6 +83,6 @@ export class Combat
 
     start()
     {
-        
+
     }
 }

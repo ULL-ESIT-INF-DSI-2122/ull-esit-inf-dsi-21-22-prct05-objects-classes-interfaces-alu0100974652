@@ -1,39 +1,60 @@
 /**
  * Clase Pokedex
  * @class Pokedex
- * @param nPokemons arrays que contendrá los distintos pokemons de la pokedex
- * @method getPokemonPosition retorna el pokemon en el número de la pokedex
- * @method addPokemon añade un pokemon al final de la pokedex
- * @method searchPokemon busca un pokemon dentro de la pokedex
- * @method tamanioPokedex retorna el tamaño de la pokedex
- * @method deletePokemon elimina un pokemon de la pokedex
  */
 
 import { Pokemon } from "./pokemon";
 
 export class Pokedex
 {
+    /**
+     * Atributos de la clase Pokedex
+     *      Arrays de Pokemons
+     */
     private nPokemons: Pokemon[] = [];
+
+    /**
+     * Constructor de la Pokedex
+     * @param nPokemons arrays con los pokemons
+     */
     constructor(nPokemons: Pokemon[]) 
     {
         this.nPokemons = nPokemons;
     };
 
+    /**
+     * Getter de la pokedex para una posición
+     * @param position posición de la pokedex a comprobar
+     * @returns retorna el pokemon en esa posición
+     */
     public getPokemonPosition(position: number)
     {
         return this.nPokemons[position];
     }
 
+    /**
+     * Añade un pokemon nuevo en la pokedex
+     * @param nuevoPokemon pokemon a añadir a la pokedex
+     */
     public addPokemon(nuevoPokemon: Pokemon)
     {
         this.nPokemons.push(nuevoPokemon);
     }
 
+    /**
+     * Tamaño de la pokedex
+     * @returns Retorna el tamaño de la pokedex [numero de pokemons dentro]
+     */
     public tamanioPokedex()
     {
         return this.nPokemons.length;
     }
 
+    /**
+     * Busca un pokemon en la pokedex
+     * @param buscarPokemon busca un pokemon en concreto a través de un booleano
+     * @returns true si lo encuentra y false si no lo encuentra
+     */
     public searchPokemon(buscarPokemon: Pokemon)
     {
         let encontrado :Boolean = false;
@@ -48,6 +69,10 @@ export class Pokedex
         return encontrado;
     }
 
+    /**
+     * Elimina un pokemon de la pokedex
+     * @param eliminarPokemon elimina un pokemon de la pokedex utilizando el metodo searchPokemon()
+     */
     public deletePokemon(eliminarPokemon: Pokemon)
     {
         if(this.searchPokemon(eliminarPokemon))
