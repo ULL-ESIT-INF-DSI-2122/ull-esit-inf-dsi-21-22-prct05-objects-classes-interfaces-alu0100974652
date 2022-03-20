@@ -35,6 +35,12 @@ describe('Pruebas para comprobar la clase Pokemon:', () => {
     it('Test para saber la vida del pokemon', () => {
         expect(Bulbasaur.getVida()).to.be.eq(45);
     });
+
+    const Bulbasaur1 = new Pokemon('Bulbasaur', 6.9, 0.7, 'Planta', [49, 49, 45, 45]);
+    Bulbasaur1.setVida(34);
+    it('Test para saber la vida del pokemon', () => {
+        expect(Bulbasaur1.getVida()).to.be.eq(34);
+    });
 });
 
 

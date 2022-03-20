@@ -14,6 +14,7 @@
  * @method getDefensa metodo que devuelve la defensa del pokemon
  * @method getVelocidad metodo que devuelve la velocidad del pokemon
  * @method getVida metodo que devuelve la vida del pokemon
+ * @method setVida metodo que cambia el valor del atributo vida del pokemon
  */
 
 export class Pokemon
