@@ -31,4 +31,13 @@ export class Ficha
     {
         return this.columna;
     }
+
+    /**
+     * Setter de la columna Ficha
+     * @param nuevaColumna Cambia el valor de la columna de la ficha
+     */
+    public setColumn(nuevaColumna: number)
+    {
+        this.columna = nuevaColumna
+    }
 }

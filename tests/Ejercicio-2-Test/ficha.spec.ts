@@ -15,4 +15,9 @@ describe('Pruebas para comprobar la clase Ficha', () => {
         expect(fichaRoja.getColum()).to.be.eq(1);
         expect(fichaAmarilla.getColum()).to.be.eq(2);
     });
+
+    it('Se puede cambiar la columna de una ficha', () => {
+        fichaRoja.setColumn(5);
+        expect(fichaRoja.getColum()).to.be.eq(5);        
+    });
 });
