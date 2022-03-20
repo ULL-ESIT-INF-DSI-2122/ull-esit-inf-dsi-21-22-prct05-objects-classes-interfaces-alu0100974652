@@ -5,6 +5,8 @@
  * @method getPokemonPosition retorna el pokemon en el número de la pokedex
  * @method addPokemon añade un pokemon al final de la pokedex
  * @method searchPokemon busca un pokemon dentro de la pokedex
+ * @method tamanioPokedex retorna el tamaño de la pokedex
+ * @method deletePokemon elimina un pokemon de la pokedex
  */
 
 import { Pokemon } from "./pokemon";
