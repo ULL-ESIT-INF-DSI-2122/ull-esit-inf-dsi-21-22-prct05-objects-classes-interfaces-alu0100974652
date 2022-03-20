@@ -10,6 +10,10 @@
  * @method getPeso metodo que devuelve el peso del pokemon
  * @method getAltura metodo que devuelve la altura del pokemon
  * @method getTipo metodo que devuelve el tipo del pokemon
+ * @method getAtaque metodo que devuelve el ataque del pokemon
+ * @method getDefensa metodo que devuelve la defensa del pokemon
+ * @method getVelocidad metodo que devuelve la velocidad del pokemon
+ * @method getVida metodo que devuelve la vida del pokemon
  */
 
 export class Pokemon
