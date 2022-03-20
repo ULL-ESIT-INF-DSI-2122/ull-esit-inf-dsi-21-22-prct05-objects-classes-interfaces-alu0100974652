@@ -11,4 +11,8 @@ describe('Pruebas para comprobar la clase Ficha', () => {
         expect(fichaAmarilla.getColor()).to.be.eq('A');
     });
 
+    it('Para cada ficha existe su posición en la columna', () => {
+        expect(fichaRoja.getColum()).to.be.eq(1);
+        expect(fichaAmarilla.getColum()).to.be.eq(2);
+    });
 });

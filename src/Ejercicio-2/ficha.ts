@@ -13,4 +13,9 @@ export class Ficha
     {
         return this.color;
     }
+
+    public getColum()
+    {
+        return this.columna;
+    }
 }
