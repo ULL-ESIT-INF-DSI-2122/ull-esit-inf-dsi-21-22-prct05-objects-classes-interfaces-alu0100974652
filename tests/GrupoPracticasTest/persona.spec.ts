@@ -1,6 +1,6 @@
 import 'mocha';
 import {expect} from 'chai';
-import {Persona} from '../src/persona';
+import {Persona} from '../../src/GrupoPracticas/persona';
 
 describe('Pruebas para la clase persona', () => {
     const persona = new Persona('Pepe', 'Papa Pipi', '12-12-1980', 'Masculino');
