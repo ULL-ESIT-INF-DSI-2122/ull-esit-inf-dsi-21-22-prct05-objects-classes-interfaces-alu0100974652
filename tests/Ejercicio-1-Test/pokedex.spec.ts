@@ -11,7 +11,7 @@ describe('Pruebas para comprobar la clase Pokedex:', () => {
     const PokedexKanto = new Pokedex([Bulbasaur, Charmander]);
 
     it('Comprobando si se puede acceder a la Pokedex', () => {
-        expect(PokedexKanto).to.be.eq([[Bulbasaur, Charmander]]);
+        expect(PokedexKanto.getPokemonPosition(1)).to.be.eq(Charmander);
     });
 
 });

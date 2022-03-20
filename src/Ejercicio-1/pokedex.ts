@@ -13,4 +13,9 @@ export class Pokedex
     {
         this.nPokemons = nPokemons;
     };
+
+    public getPokemonPosition(position: number)
+    {
+        return this.nPokemons[position];
+    }
 }
