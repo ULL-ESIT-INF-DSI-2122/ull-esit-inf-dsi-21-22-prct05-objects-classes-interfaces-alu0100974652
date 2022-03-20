@@ -45,4 +45,18 @@ export class Pokedex
         }
         return encontrado;
     }
+
+    public deletePokemon(eliminarPokemon: Pokemon)
+    {
+        if(this.searchPokemon(eliminarPokemon))
+        {
+            for(let i = 0; i < this.nPokemons.length; i++)
+            {
+                if(eliminarPokemon == this.nPokemons[i])
+                {
+                    this.nPokemons.splice(i,1);
+                }
+            }
+        }
+    }
 }

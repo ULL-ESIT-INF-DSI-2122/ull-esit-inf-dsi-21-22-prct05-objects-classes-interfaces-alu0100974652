@@ -26,7 +26,8 @@ describe('Pruebas para comprobar la clase Pokedex:', () => {
     });
 
     it('Se puede eliminar un Pokemon de la Pokedex', () => {
-        expect(PokedexKanto.deletePokemon(Bulbasaur)).to.be.eq([Charmander, Squirtle]);
+        PokedexKanto.deletePokemon(Bulbasaur);
+        expect(PokedexKanto.tamanioPokedex()).to.be.eq(2);
     })
 
 });
