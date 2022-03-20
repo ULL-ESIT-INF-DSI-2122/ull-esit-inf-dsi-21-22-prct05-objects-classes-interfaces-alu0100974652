@@ -25,4 +25,8 @@ describe('Pruebas para comprobar la clase Pokedex:', () => {
         expect(PokedexKanto.searchPokemon(Pikachu)).to.be.eq(false);
     });
 
+    it('Se puede eliminar un Pokemon de la Pokedex', () => {
+        expect(PokedexKanto.deletePokemon(Bulbasaur)).to.be.eq([Charmander, Squirtle]);
+    })
+
 });

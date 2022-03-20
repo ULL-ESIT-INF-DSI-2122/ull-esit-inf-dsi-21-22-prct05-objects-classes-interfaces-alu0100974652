@@ -43,7 +43,6 @@ export class Pokedex
                 encontrado = true;
             }
         }
-
         return encontrado;
     }
 }
