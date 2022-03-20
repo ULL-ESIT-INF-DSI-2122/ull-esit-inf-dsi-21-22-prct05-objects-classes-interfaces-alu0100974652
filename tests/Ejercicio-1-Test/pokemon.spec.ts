@@ -8,6 +8,10 @@ describe('Pruebas para comprobar la clase Pokemon:', () => {
         expect(Bulbasaur.getNombre()).to.be.eq('Bulbasaur');
     });
 
+    it('Test para saber el peso del pokemon', () => {
+        expect(Bulbasaur.getPeso()).to.be.eq(6.9);
+    });
+
 });
 
 
