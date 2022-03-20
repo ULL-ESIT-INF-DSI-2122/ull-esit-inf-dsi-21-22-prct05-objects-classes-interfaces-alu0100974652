@@ -19,5 +19,10 @@ describe('Pruebas para comprobar la clase Pokedex:', () => {
         expect(PokedexKanto.getPokemonPosition(2)).to.be.eq(Squirtle);
     });
 
+    it('Se puede buscar un Pokemon en la Pokedex', () => {
+        expect(PokedexKanto.searchPokemon(Bulbasaur)).to.be.eq(true);
+        expect(PokedexKanto.searchPokemon(Squirtle)).to.be.eq(false);
+    });
+
 
 });
