@@ -10,7 +10,7 @@ export class Pokemon
     private estadisticasBasicas = Array(4);
 
     /**
-     * 
+     * Constructor de la clase pokemon
      * @param nombre nombre del pokemon
      * @param peso peso del pokemon
      * @param altura altura del pokemon

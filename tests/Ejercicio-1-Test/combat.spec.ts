@@ -9,6 +9,11 @@ describe('Pruebas para comprobar la clase Combate:', () => {
     const Squirtle = new Pokemon('Squirtle', 9, 0.5, 'Agua', [46,65,43,44]);
     const Pikachu = new Pokemon('Pikachu',6,0.4,'Electrico',[55,40,90,35]);
 
+    it('Comprobar el metodo calculodeDanios', () => {
+        const calculoDeDanios = new Combat(Bulbasaur, Squirtle);
+        expect(calculoDeDanios.calculoDanios(Bulbasaur.getTipo(), Squirtle.getTipo(), Bulbasaur.getAtaque(), Squirtle.getDefensa())).to.be.eq(75.38461538461539);
+    });
+
     it('Combate Bulbasaur vs Squirtle = Ganador Bulbasaur', () => {
         const primerCombate = new Combat(Bulbasaur, Squirtle);
         expect(primerCombate.start(Bulbasaur, Squirtle)).to.be.eq(Bulbasaur);

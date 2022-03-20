@@ -90,7 +90,7 @@ export class Combat
     start(pokemonA: Pokemon, pokemonB: Pokemon)
     {
         /** Muestra un mensaje por pantalla de comienzo del combate entre dos pokemons */
-        console.log(`El combate entre ${pokemonA} vs ${pokemonB} está apunto de empezar:`);
+        console.log(`El combate entre ${this.pokemon1} vs ${this.pokemon2} está apunto de empezar:`);
 
         /** Contador de turnos */
         let i: number  = 0;
