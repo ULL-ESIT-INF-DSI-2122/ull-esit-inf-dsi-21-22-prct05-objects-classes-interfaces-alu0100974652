@@ -1,17 +1,15 @@
 export class Ficha 
 {
     private color: string;
-    private columna: number;
 
     /**
      * Constructor de una ficha
-     * @param color Determina el color de la ficha
      * @param columna Determina la columna de la ficha
+     * columna: number
      */
-    constructor(color: string, columna: number)
+    constructor(color: string)
     {
         this.color = color;
-        this.columna = columna;
     }
 
     /**
@@ -23,21 +21,4 @@ export class Ficha
         return this.color;
     }
 
-    /**
-     * Getter de columna de ficha
-     * @returns Retorna la columna de la ficha
-     */
-    public getColum()
-    {
-        return this.columna;
-    }
-
-    /**
-     * Setter de la columna Ficha
-     * @param nuevaColumna Cambia el valor de la columna de la ficha
-     */
-    public setColumn(nuevaColumna: number)
-    {
-        this.columna = nuevaColumna
-    }
 }

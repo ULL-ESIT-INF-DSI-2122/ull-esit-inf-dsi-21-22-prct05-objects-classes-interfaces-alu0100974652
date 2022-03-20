@@ -4,8 +4,8 @@ import { Ficha } from '../../src/Ejercicio-2/ficha';
 import { Jugador } from '../../src/Ejercicio-2/jugador';
 
 describe('Pruebas para comprobar la clase Jugador', () => {
-    const fichaRoja = new Ficha('R', 1);
-    const fichaAmarilla = new Ficha('A', 2);
+    const fichaRoja = new Ficha('R');
+    const fichaAmarilla = new Ficha('A');
     const jugadorUno = new Jugador(21, fichaRoja);
     const jugadorDos = new Jugador(21, fichaAmarilla);
 
@@ -24,7 +24,7 @@ describe('Pruebas para comprobar la clase Jugador', () => {
     it('Se puede comprobar si existen más movimientos (fichas disponibles)', () => {
         expect(jugadorUno.fichasDisponibles()).to.be.eq(true);
         jugadorDos.setFichas(0);
-        expect(jugadorDos.fichasDisponibles()).to.be.eq(false)
+        expect(jugadorDos.fichasDisponibles()).to.be.eq(false);
     })
 
 });

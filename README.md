@@ -94,7 +94,7 @@ Y por último deberemos añadir un método que nos permita cambiar el valor del 
     }
 ```
 
-De esta forma los tests que deberemos comprobar son los getters y el setter de vida de un pokémon:ç
+De esta forma los tests que deberemos comprobar son los getters y el setter de vida de un pokémon:
 ```typescript
 describe('Pruebas para comprobar la clase Pokemon:', () => {
     const Bulbasaur = new Pokemon('Bulbasaur', 6.9, 0.7, 'Planta', [49, 49, 45, 45]);
@@ -433,4 +433,97 @@ Vida Restante de Charmander es -88.90697674418605
 ```
 
 ## Ejercicio 2 - Conecta 4
-Se nos pide realizar el juego de conecta 4.
+Se nos pide realizar el juego de conecta 4. Para ello distingueremos las siguientes clases:
+- Ficha
+- Jugador
+- Tablero
+- Juego
+
+### Clase Ficha
+Para esta clase pensaremos en los atributos de una ficha, esta tendrá el único atributo que será el color.
+```typescript
+private color: string;
+
+constructor(color: string)
+    {
+        this.color = color;
+    }
+```
+Tenemos que tener en cuenta que en este juego existen dos colores, el rojo y el amarillo, para ello crearemos el método getColor para obtener el color de la ficha.
+```typescript
+public getColor()
+    {
+        return this.color;
+    }
+```
+Y las pruebas utilizadas serán: 
+```typescript
+const fichaRoja = new Ficha('R');
+    const fichaAmarilla = new Ficha('A');
+
+    it('Para cada ficha existe un color', () => {
+        expect(fichaRoja.getColor()).to.be.eq('R');
+        expect(fichaAmarilla.getColor()).to.be.eq('A');
+    });
+```
+
+### Clase Jugador
+Pensando en el juego, sabemos que un jugador tiene un número de fichas y unas fichas en particular, por eso se toma como atributos:
+```typescript
+    private nFichas: number = 21;
+    private fichaJugador: Ficha;
+
+    constructor(nFichas: number, fichaJugador: Ficha)
+    {
+        this.nFichas = nFichas;
+        this.fichaJugador = fichaJugador;
+    }
+
+    const fichaRoja = new Ficha('R');
+    const fichaAmarilla = new Ficha('A');
+    const jugadorUno = new Jugador(21, fichaRoja);
+    const jugadorDos = new Jugador(21, fichaAmarilla);
+
+    it('Se crean los jugadores con las fichas iniciales = 21', () => {
+        expect(jugadorUno.getFichas()).to.be.eq(21);
+        expect(jugadorDos.getFichas()).to.be.eq(21);
+    });
+```
+Como vemos el número inicial de las fichas serán 21 y cada jugador tiene su propia ficha. Ahora realizaremos los métodos getFichas, setFichas y fichasDisponibles.
+Para el getFichas y setFichas se realizarán de la misma manera que los otros getters y setters implementados con anterioridad:
+```typescript
+    public getFichas()
+    {
+        return this.nFichas;
+    }
+
+    public setFichas(actualizarFichas: number)
+    {
+        this.nFichas = actualizarFichas;
+    }
+
+    it('Se puede actualizar el núemero de fichas de un jugador', () => {
+        jugadorUno.setFichas(19);
+        expect(jugadorUno.getFichas()).to.be.eq(19);
+        jugadorDos.setFichas(15);
+        expect(jugadorDos.getFichas()).to.be.eq(15);
+    });
+```
+En el juego deberemos conocer si existe la posibilidad de seguir jugando o no, para ello implementaremos un método booleano que retornará true si se puede seguir jugando o false en el caso contrario:
+```typescript
+    public fichasDisponibles()
+    {
+        let disponible: boolean = true;
+
+        if(this.getFichas() < 1)
+            disponible = false;
+
+        return disponible;
+    }
+
+    it('Se puede comprobar si existen más movimientos (fichas disponibles)', () => {
+        expect(jugadorUno.fichasDisponibles()).to.be.eq(true);
+        jugadorDos.setFichas(0);
+        expect(jugadorDos.fichasDisponibles()).to.be.eq(false);
+    })
+```

@@ -33,4 +33,18 @@ export class Jugador
     {
         this.nFichas = actualizarFichas;
     }
+
+    /**
+     * Booleano de fichas disponibles
+     * @returns Devuelve verdadero o falso si existen fichas disponibles
+     */
+    public fichasDisponibles()
+    {
+        let disponible: boolean = true;
+
+        if(this.getFichas() < 1)
+            disponible = false;
+
+        return disponible;
+    }
 }
