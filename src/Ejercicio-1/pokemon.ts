@@ -9,6 +9,7 @@
  * @method getNombre metodo que devuelve el nombre del pokemon
  * @method getPeso metodo que devuelve el peso del pokemon
  * @method getAltura metodo que devuelve la altura del pokemon
+ * @method getTipo metodo que devuelve el tipo del pokemon
  */
 
 export class Pokemon
