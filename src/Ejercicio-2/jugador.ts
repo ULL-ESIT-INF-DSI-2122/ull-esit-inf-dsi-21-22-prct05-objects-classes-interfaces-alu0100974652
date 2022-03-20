@@ -16,8 +16,21 @@ export class Jugador
         this.fichaJugador = fichaJugador;
     }
 
+    /**
+     * Getter de fichas
+     * @returns Devuelve el número de fichas
+     */
     public getFichas()
     {
         return this.nFichas;
+    }
+
+    /**
+     * Setter de fichas
+     * @param actualizarFichas Cambia el valor del número de fichas
+     */
+    public setFichas(actualizarFichas: number)
+    {
+        this.nFichas = actualizarFichas;
     }
 }

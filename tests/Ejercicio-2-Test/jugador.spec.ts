@@ -21,4 +21,10 @@ describe('Pruebas para comprobar la clase Jugador', () => {
         expect(jugadorDos.getFichas()).to.be.eq(15);
     });
 
+    it('Se puede comprobar si existen más movimientos (fichas disponibles)', () => {
+        expect(jugadorUno.fichasDisponibles()).to.be.eq(true);
+        jugadorDos.setFichas(0);
+        expect(jugadorDos.fichasDisponibles()).to.be.eq(false)
+    })
+
 });
