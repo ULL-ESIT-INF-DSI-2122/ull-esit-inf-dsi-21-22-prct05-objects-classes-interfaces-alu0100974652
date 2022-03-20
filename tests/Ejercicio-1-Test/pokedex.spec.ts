@@ -14,4 +14,10 @@ describe('Pruebas para comprobar la clase Pokedex:', () => {
         expect(PokedexKanto.getPokemonPosition(1)).to.be.eq(Charmander);
     });
 
+    it('Se puede añadir un nuevo Pokeon a la Pokedex', () => {
+        PokedexKanto.addPokemon(Squirtle);
+        expect(PokedexKanto.getPokemonPosition(2)).to.be.eq(Squirtle);
+    });
+
+
 });
