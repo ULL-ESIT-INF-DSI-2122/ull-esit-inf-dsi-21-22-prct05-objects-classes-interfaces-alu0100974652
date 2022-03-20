@@ -9,13 +9,13 @@ describe('Pruebas para comprobar la clase Combate:', () => {
     const Squirtle = new Pokemon('Squirtle', 9, 0.5, 'Agua', [46,65,43,44]);
     const Pikachu = new Pokemon('Pikachu',6,0.4,'Electrico',[55,40,90,35]);
 
-    it('Combate Bulbasaur vs Squirtle = ', () => {
+    it('Combate Bulbasaur vs Squirtle = Ganador Bulbasaur', () => {
         const primerCombate = new Combat(Bulbasaur, Squirtle);
         expect(primerCombate.start(Bulbasaur, Squirtle)).to.be.eq(Bulbasaur);
     });
 
-    it('Combate Charmander vs Pikachu = ', () => {
+    it('Combate Charmander vs Pikachu = Ganador Charmander', () => {
         const segundoCombate = new Combat(Charmander, Pikachu);
-        expect(segundoCombate.start(Charmander, Pikachu)).to.be.eq(Pikachu);
+        expect(segundoCombate.start(Charmander, Pikachu)).to.be.eq(Charmander);
     });
 });
