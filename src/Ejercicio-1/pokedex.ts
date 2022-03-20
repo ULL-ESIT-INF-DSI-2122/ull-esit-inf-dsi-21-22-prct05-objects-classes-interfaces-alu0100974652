@@ -18,4 +18,9 @@ export class Pokedex
     {
         return this.nPokemons[position];
     }
+
+    public addPokemon(nuevoPokemon: Pokemon)
+    {
+        this.nPokemons.push(nuevoPokemon);
+    }
 }
