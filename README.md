@@ -431,3 +431,6 @@ El daño realizado es de 130
 Vida Restante de Pikachu es -95
 Vida Restante de Charmander es -88.90697674418605
 ```
+
+## Ejercicio 2 - Conecta 4
+Se nos pide realizar el juego de conecta 4.
