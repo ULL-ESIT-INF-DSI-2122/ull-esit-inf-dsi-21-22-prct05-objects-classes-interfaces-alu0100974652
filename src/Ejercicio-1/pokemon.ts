@@ -8,7 +8,7 @@
  * @param estadisticasBasicas atributo de estadísticas básicas en array (ataque, defensa, velocidad y vida)
  * @method getNombre metodo que devuelve el nombre del pokemon
  * @method getPeso metodo que devuelve el peso del pokemon
- * 
+ * @method getAltura metodo que devuelve la altura del pokemon
  */
 
 export class Pokemon
