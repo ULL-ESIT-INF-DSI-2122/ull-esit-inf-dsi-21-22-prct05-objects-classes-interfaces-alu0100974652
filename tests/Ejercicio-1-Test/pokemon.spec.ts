@@ -19,6 +19,22 @@ describe('Pruebas para comprobar la clase Pokemon:', () => {
     it('Test para saber el tipo del pokemon', () => {
         expect(Bulbasaur.getTipo()).to.be.eq('Planta');
     });
+
+    it('Test para saber el ataque del pokemon', () => {
+        expect(Bulbasaur.getAtaque()).to.be.eq(49);
+    });
+
+    it('Test para saber la defensa del pokemon', () => {
+        expect(Bulbasaur.getDefensa()).to.be.eq(49);
+    });
+
+    it('Test para saber la velocidad del pokemon', () => {
+        expect(Bulbasaur.getVelocidad()).to.be.eq(45);
+    });
+
+    it('Test para saber la vida del pokemon', () => {
+        expect(Bulbasaur.getVida()).to.be.eq(45);
+    });
 });
 
 
