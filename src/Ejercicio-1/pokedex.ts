@@ -9,5 +9,8 @@ import { Pokemon } from "./pokemon";
 export class Pokedex
 {
     private nPokemons: Pokemon[] = [];
-    constructor() {};
+    constructor(nPokemons: Pokemon[]) 
+    {
+        this.nPokemons = nPokemons;
+    };
 }
