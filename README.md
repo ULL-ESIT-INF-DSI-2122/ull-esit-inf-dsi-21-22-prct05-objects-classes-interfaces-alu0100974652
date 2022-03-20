@@ -399,24 +399,35 @@ Turno 1: los tipos son Planta vs Agua
 El Pokémon Bulbasaur realiza un ataque con poder 49
 El Pokémon Squirtle defiende con un poder de 65
 El daño realizado es de 75.38461538461539
+Vida Restante de Bulbasaur es 45
+Vida Restante de Squirtle es -31.384615384615387
 El Pokémon Squirtle realiza un ataque con poder 46
 El Pokémon Bulbasaur defiende con un poder de 49
 El daño realizado es de 23.46938775510204
+Vida Restante de Bulbasaur es 21.53061224489796
+Vida Restante de Squirtle es -31.384615384615387
 Turno 2: los tipos son Planta vs Agua
 El Pokémon Bulbasaur realiza un ataque con poder 49
 El Pokémon Squirtle defiende con un poder de 65
 El daño realizado es de 75.38461538461539
+Vida Restante de Bulbasaur es 21.53061224489796
+Vida Restante de Squirtle es -106.76923076923077
 El Pokémon Squirtle realiza un ataque con poder 46
 El Pokémon Bulbasaur defiende con un poder de 49
 El daño realizado es de 23.46938775510204
+Vida Restante de Bulbasaur es -1.9387755102040813
+Vida Restante de Squirtle es -106.76923076923077
     ✔ Combate Bulbasaur vs Squirtle = Ganador Bulbasaur
 Vamos a conocer quien es el primer Pokémon en empezar en base a su velocidad:
 Turno 1: los tipos son Electrico vs Fuego
 El Pokémon Pikachu realiza un ataque con poder 55
 El Pokémon Charmander defiende con un poder de 43
 El daño realizado es de 127.90697674418605
+Vida Restante de Pikachu es 35
+Vida Restante de Charmander es -88.90697674418605
 El Pokémon Charmander realiza un ataque con poder 52
 El Pokémon Pikachu defiende con un poder de 40
 El daño realizado es de 130
-    ✔ Combate Charmander vs Pikachu = Ganador Charmander
+Vida Restante de Pikachu es -95
+Vida Restante de Charmander es -88.90697674418605
 ```

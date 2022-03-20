@@ -125,12 +125,16 @@ export class Combat
             danio = this.calculoDanios(pokemonPrimeroAtacar.getTipo(), pokemonSegundoAtacar.getTipo(), pokemonPrimeroAtacar.getAtaque(), pokemonSegundoAtacar.getDefensa());
             console.log(`El daño realizado es de ${danio}`);
             pokemonSegundoAtacar.setVida(pokemonSegundoAtacar.getVida()-danio);
+            console.log(`Vida Restante de ${pokemonPrimeroAtacar.getNombre()} es ${pokemonPrimeroAtacar.getVida()}`);
+            console.log(`Vida Restante de ${pokemonSegundoAtacar.getNombre()} es ${pokemonSegundoAtacar.getVida()}`);
 
             console.log(`El Pokémon ${pokemonSegundoAtacar.getNombre()} realiza un ataque con poder ${pokemonSegundoAtacar.getAtaque()}`);
             console.log(`El Pokémon ${pokemonPrimeroAtacar.getNombre()} defiende con un poder de ${pokemonPrimeroAtacar.getDefensa()}`);
             danio = this.calculoDanios(pokemonSegundoAtacar.getTipo(), pokemonPrimeroAtacar.getTipo(), pokemonSegundoAtacar.getAtaque(), pokemonPrimeroAtacar.getDefensa());
             console.log(`El daño realizado es de ${danio}`);
             pokemonPrimeroAtacar.setVida(pokemonPrimeroAtacar.getVida()-danio);
+            console.log(`Vida Restante de ${pokemonPrimeroAtacar.getNombre()} es ${pokemonPrimeroAtacar.getVida()}`);
+            console.log(`Vida Restante de ${pokemonSegundoAtacar.getNombre()} es ${pokemonSegundoAtacar.getVida()}`);
 
             i++;            
         }
