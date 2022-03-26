@@ -1,6 +1,8 @@
 # Práctica 5 - Objetos, clases e interfaces
 ## _Desarrollo de Sistemas Informáticos_
 
+[![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct05-objects-classes-interfaces-alu0100974652/badge.svg?branch=master)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct05-objects-classes-interfaces-alu0100974652?branch=master)
+
 En esta práctica se resolverán dos ejercicios de programación a través del uso de objetos, clases e interfaces.
 
 ## Algunas tareas previas
